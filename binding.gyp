@@ -35,6 +35,12 @@
             ],
           },
 
+	  'target_arch=="mipsel"', {
+		'include_dirs' : [
+			'/usr/include/openssl',
+               ],
+          },
+
           # Otherwise, if not Windows, link against the exposed OpenSSL
           # in Node.
           {
